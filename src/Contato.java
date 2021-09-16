@@ -11,7 +11,7 @@ public class Contato {
   Contato() {
     this.setId(1);
     this.nome = "Adeobaldo";
-    this.telefone = 999999;
+    this.telefone = 87654321;
     this.endereco = "Pituba";
 
   }
@@ -26,10 +26,10 @@ public class Contato {
 
   Contato(String nome, Integer id) {
 
-    this.setId(71);
-    this.nome = "Joao";
-    this.telefone = 98988989;
-    this.endereco = "Paralela";
+    this.setId(2);
+    this.nome = "Aldo";
+    this.telefone = 12345678;
+    this.endereco = "avParalela";
   }
 
   public List listaContato() {
