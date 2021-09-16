@@ -3,25 +3,33 @@ import java.util.ArrayList;
 
 public class Contato {
 
-  int id;
-  String nome;
-  int telefone;
-  String endereco;
+  private int id;
+  public String nome;
+  public int telefone;
+  public String endereco;
 
   Contato() {
-    id = 1;
-    nome = "";
-    telefone = 0;
-    endereco = "";
+    this.setId(1);
+    this.nome = "Adeobaldo";
+    this.telefone = 999999;
+    this.endereco = "Pituba";
 
   }
 
-  Contato(String nome, String endereco, int telefone, int id) {
+  public int getId() {
+    return id;
+  }
 
-    id = 71;
-    nome = "Joao";
-    telefone = 98988989;
-    endereco = "Paralela";
+  public void setId(int id) {
+    this.id = id;
+  }
+
+  Contato(String nome, Integer id) {
+
+    this.setId(71);
+    this.nome = "Joao";
+    this.telefone = 98988989;
+    this.endereco = "Paralela";
   }
 
   public List listaContato() {
