@@ -2,7 +2,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         Contato a = new Contato();
 
-        Contato b = new Contato("Clodoado", 1);
+        Contato b = new Contato("Geisielle", 1);
 
         System.out.println(
                 "Id: " + a.getId() + "\nNome: " + a.nome + "\nEndereço: " + a.endereco + "\nTelefone: " + a.telefone);
