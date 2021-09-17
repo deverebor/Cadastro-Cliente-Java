@@ -4,15 +4,8 @@ public class App {
 
         Contato b = new Contato("Geisielle");
 
-        a.nome = "Lucas";
-        a.end = "Casto Branco";
-        a.tel = 87654321;
-
-        b.end = "Cidade Baixa";
-        b.tel = 12345678;
-
-        System.out.println("Id: " + a.getId() + "\nNome: " + a.nome + "\nEndereço: " + a.end + "\nTelefone: " + a.tel);
+        System.out.println(a.listaContatos());
         System.out.println("\n-------------------------------------------------------------------\n");
-        System.out.println("Id: " + b.getId() + "\nNome: " + b.nome + "\nEndereço: " + b.end + "\nTelefone: " + b.tel);
+        System.out.println(b.listaContatos());
     }
 }
