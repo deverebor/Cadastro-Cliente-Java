@@ -1,19 +1,24 @@
-import java.util.List;
-import java.util.ArrayList;
-
 public class Contato {
 
   private int id;
-  public String nome;
+  public int count;
   public int tel;
-  public String end;
+  public String nome;
+  public String ende;
 
   Contato() {
-    this.setId(1);
-    this.nome = nome;
-    this.tel = tel;
-    this.end = end;
+    this.setId(id);
+    this.nome = "Lucas Souza";
+    this.tel = 87654321;
+    this.ende = "Av Parelela";
 
+  }
+
+  Contato(String nome) {
+    this.setId(id);
+    this.nome = nome;
+    this.tel = 12345678;
+    this.ende = "São Marcos";
   }
 
   public int getId() {
@@ -21,26 +26,39 @@ public class Contato {
   }
 
   public void setId(int id) {
-    this.id = id;
+    count++;
+    this.id = count;
   }
 
-  Contato(String nome, Integer id) {
+  public String getNome() {
+    return nome;
+  }
 
-    this.setId(2);
+  public void setNome(String nome) {
     this.nome = nome;
-    this.tel = tel;
-    this.end = end;
   }
 
-  public List listaContato() {
-    List<String> infoContato = new ArrayList<String>();
-    List<Integer> telefoneContato = new ArrayList<Integer>();
+  public String getEnde() {
+    return ende;
+  }
 
-    infoContato.add("Joao");
-    infoContato.add("AvParalela");
-    telefoneContato.add(989898989);
+  public void setEnde(String ende) {
+    this.ende = ende;
+  }
 
-    return infoContato;
+  public int getTel() {
+    return tel;
+
+  }
+
+  public void setTel(int tel) {
+    this.tel = tel;
+
+  }
+
+  public String listaContatos() {
+
+    return ("Id: " + getId() + "\nNome: " + nome + "\nEndereço: " + ende + "\nTelefone: " + tel);
   }
 
 }
