@@ -5,14 +5,14 @@ public class Contato {
 
   private int id;
   public String nome;
-  public int telefone;
-  public String endereco;
+  public int tel;
+  public String end;
 
   Contato() {
     this.setId(1);
-    this.nome = "Lucas";
-    this.telefone = 87654321;
-    this.endereco = "Imbui";
+    this.nome = nome;
+    this.tel = tel;
+    this.end = end;
 
   }
 
@@ -28,8 +28,8 @@ public class Contato {
 
     this.setId(2);
     this.nome = nome;
-    this.telefone = 12345678;
-    this.endereco = "São Marcos";
+    this.tel = tel;
+    this.end = end;
   }
 
   public List listaContato() {
