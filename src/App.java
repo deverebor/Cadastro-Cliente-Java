@@ -2,7 +2,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         Contato a = new Contato();
 
-        Contato b = new Contato("Geisielle", 1);
+        Contato b = new Contato("Geisielle");
 
         a.nome = "Lucas";
         a.end = "Casto Branco";

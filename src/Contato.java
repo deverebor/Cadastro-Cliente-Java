@@ -24,7 +24,7 @@ public class Contato {
     this.id = id;
   }
 
-  Contato(String nome, Integer id) {
+  Contato(String nome) {
 
     this.setId(2);
     this.nome = nome;
