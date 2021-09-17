@@ -5,7 +5,7 @@ public class App {
         Contato b = new Contato("Geisielle");
 
         System.out.println(a.listaContatos());
-        System.out.println("\n-------------------------------------------------------------------\n");
+        System.out.println("\n--------------------------------------\n");
         System.out.println(b.listaContatos());
     }
 }
